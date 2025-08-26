@@ -5,8 +5,10 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "node server.js",
+    "serve": "next start -p $PORT",
+    "lint": "next lint",
+    "postinstall": "next build"
   },
   "dependencies": {
     "@firebasegen/default-connector": "file:dataconnect-generated/js/default-connector",
