@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Classa2 – Technical Architecture</title>
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Font: Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Custom styling -->
+  <style>
+    html, body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      line-height: 1.6;
+    }
+    main {
+      background: #ffffff;
+      border-radius: 0.75rem;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+      padding: 3rem 4rem;
+    }
+    h1 {
+      font-size: 2.25rem;
+      font-weight: 700;
+      color: #1a202c;
+      margin-bottom: 2rem;
+      letter-spacing: -0.025em;
+      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: 1rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #2d3748;
+      margin-top: 2.5rem;
+      margin-bottom: 1.5rem;
+      letter-spacing: -0.015em;
+    }
+    hr {
+      margin: 2.5rem 0;
+      border: 0;
+      height: 1px;
+      background-color: #e2e8f0;
+    }
+    p, li {
+      color: #4a5568;
+      margin-bottom: 1rem;
+    }
+    table {
+      margin: 1.5rem 0;
+    }
+    th {
+      font-weight: 600;
+      padding: 0.75rem 1rem;
+    }
+    td {
+      padding: 0.75rem 1rem;
+    }
+    .mermaid {
+      margin: 2rem 0;
+      padding: 1rem;
+      background-color: #f7fafc;
+      border-radius: 0.5rem;
+    }
+    code {
+      font-family: 'SF Mono', 'Consolas', monospace;
+      font-size: 0.9em;
+      background-color: #f1f5f9;
+      padding: 0.15rem 0.3rem;
+      border-radius: 0.25rem;
+    }
+  </style>
+  <!-- Mermaid for architecture & workflow diagrams -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>mermaid.initialize({ startOnLoad:true, theme:'neutral' });</script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <main class="max-w-4xl mx-auto my-10">
+  <h1>Technical Architecture Document</h1>
+
+  <h2>1. Purpose</h2>
+  <p>This document provides a high-level overview of the technical architecture for <strong>Classa2</strong>. It is intended for engineers, DevOps personnel, and stakeholders to understand the system structure, technology stack, and component interactions.</p>
+
+  <hr/>
+
+  <h2>2. High-Level Architecture Diagram</h2>
+  <div class="mermaid text-sm">
+flowchart TD
+    subgraph Client
+        A[Browser / Mobile Web]
+    end
+
+    subgraph Frontend["Next.js 13 (App Router) - Vercel Edge / Node"]
+        B[React Components]
+        B -->|Firebase JS SDK| C[Firebase Auth]
+        B -->|Firestore JS SDK| D[Cloud Firestore]
+        B -->|Cloud Storage SDK| E[Firebase Storage]
+    end
+
+    A --> B
+
+    subgraph Firebase["Google Cloud"]
+        C
+        D
+        E
+    end
+  </div>
+  <p><em>Legend</em></p>
+  <ul>
+    <li>Solid arrows: HTTPS calls.</li>
+    <li>Sub-graphs: deployment boundaries (Vercel / Firebase).</li>
+  </ul>
+
+  <hr/>
+
+  <h2>3. Server-Side Components</h2>
+  <div class="overflow-x-auto">
+    <table class="table-auto border border-gray-300">
+      <thead class="bg-gray-100">
+        <tr>
+          <th class="px-3 py-1 border">Component</th>
+          <th class="px-3 py-1 border">Technology</th>
+          <th class="px-3 py-1 border">Responsibility</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="px-3 py-1 border font-semibold">Next.js Runtime</td>
+          <td class="px-3 py-1 border">Next.js 13 on Vercel (Edge &amp; Node)</td>
+          <td class="px-3 py-1 border">SSR/SSG, (future) API routes, asset optimisation, auth cookie refresh.</td>
+        </tr>
+        <tr>
+          <td class="px-3 py-1 border font-semibold">Firebase Cloud Services</td>
+          <td class="px-3 py-1 border">Firebase Auth, Cloud Firestore, Cloud Storage</td>
+          <td class="px-3 py-1 border">Data persistence, authentication/authorization (JWT), file uploads.</td>
+        </tr>
+        <tr>
+          <td class="px-3 py-1 border font-semibold">Cloud Functions <em>(optional)</em></td>
+          <td class="px-3 py-1 border">Firebase Functions (Node.js)</td>
+          <td class="px-3 py-1 border">Reserved for heavy server logic, cron, SenseAI processing.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+  <hr/>
+
+  <h2>4. Third-Party Integrations</h2>
+  <div class="overflow-x-auto">
+    <table class="table-auto border border-gray-300">
+      <thead class="bg-gray-100">
+        <tr>
+          <th class="px-3 py-1 border">Integration</th>
+          <th class="px-3 py-1 border">Purpose</th>
+          <th class="px-3 py-1 border">Usage</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="px-3 py-1 border">Firebase Auth</td>
+          <td class="px-3 py-1 border">User authentication</td>
+          <td class="px-3 py-1 border"><code>firebase/auth</code> in <code>lib/firebaseClient.ts</code>; enforced by <code>AuthGuard</code>.</td>
+        </tr>
+        <tr>
+          <td class="px-3 py-1 border">Cloud Firestore</td>
+          <td class="px-3 py-1 border">NoSQL DB</td>
+          <td class="px-3 py-1 border"><code>firebase/firestore</code> in <code>app/**</code>; IndexedDB offline support.</td>
+        </tr>
+        <tr>
+          <td class="px-3 py-1 border">Firebase Storage</td>
+          <td class="px-3 py-1 border">Asset storage</td>
+          <td class="px-3 py-1 border">Bucket referenced via SDK.</td>
+        </tr>
+        <tr>
+          <td class="px-3 py-1 border">Tailwind CSS</td>
+          <td class="px-3 py-1 border">Styling</td>
+          <td class="px-3 py-1 border"><code>tailwind.config.js</code>, <code>app/globals.css</code>.</td>
+        </tr>
+        <tr>
+          <td class="px-3 py-1 border">React-Hook-Form &amp; others</td>
+          <td class="px-3 py-1 border">Forms / UI</td>
+          <td class="px-3 py-1 border">Listed in <code>package.json</code>.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+  <hr/>
+
+  <h2>5. Hosting &amp; Deployment Details</h2>
+  <div class="overflow-x-auto">
+    <table class="table-auto border border-gray-300">
+      <thead class="bg-gray-100">
+        <tr>
+          <th class="px-3 py-1 border">Layer</th>
+          <th class="px-3 py-1 border">Provider</th>
+          <th class="px-3 py-1 border">Environment</th>
+          <th class="px-3 py-1 border">CI/CD</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="px-3 py-1 border">Frontend</td>
+          <td class="px-3 py-1 border">Vercel</td>
+          <td class="px-3 py-1 border">Production &amp; preview per PR</td>
+          <td class="px-3 py-1 border">Vercel automated Next.js build.</td>
+        </tr>
+        <tr>
+          <td class="px-3 py-1 border">Backend</td>
+          <td class="px-3 py-1 border">Firebase</td>
+          <td class="px-3 py-1 border">Project <code>edueron-a0ce0</code></td>
+          <td class="px-3 py-1 border">Managed via Firebase Console / CLI (<code>firebase deploy</code>).</td>
+        </tr>
+        <tr>
+          <td class="px-3 py-1 border">Static Assets</td>
+          <td class="px-3 py-1 border">Vercel Edge CDN &amp; Firebase Storage</td>
+          <td class="px-3 py-1 border">Global</td>
+          <td class="px-3 py-1 border">—</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p><strong>Deployment workflow:</strong></p>
+  <ol class="list-decimal ml-6">
+    <li>Push to <code>main</code> → Vercel build &amp; preview.</li>
+    <li>Successful build promotes production URL (<code>https://classa.vercel.app</code>).</li>
+    <li>Firebase resources provisioned once; rules updated via CLI.</li>
+  </ol>
+
+  <hr/>
+
+  <h2>6. Non-Functional Considerations</h2>
+  <ul class="list-disc ml-6">
+    <li><strong>Scalability</strong> – Automatic scaling on Vercel &amp; Firebase.</li>
+    <li><strong>Security</strong> – Firestore/Storage rules; env secrets in Vercel.</li>
+    <li><strong>Performance</strong> – ISR/SSG; edge CDN; IndexedDB offline.</li>
+    <li><strong>Monitoring</strong> – Vercel Analytics &amp; Firebase Performance.</li>
+  </ul>
+
+  <hr/>
+
+
+
+  <h2>7. CI/CD Workflow Diagram</h2>
+  <div class="mermaid text-sm">
+flowchart LR
+    developer[(Commit / PR)]
+    vercel["Vercel Build - Next.js"]
+    tests["Unit & Integration Tests"]
+    preview["Preview Deployment"]
+    prod["Production Deployment"]
+
+    developer --> vercel
+    vercel --> tests
+    tests -->|Pass| preview
+    preview -->|Merge to main| prod
+  </div>
+
+  <hr/>
+
+  <h2>8. Security &amp; Compliance Posture</h2>
+  <div class="overflow-x-auto">
+    <table class="table-auto border border-gray-300">
+      <thead class="bg-gray-100">
+        <tr>
+          <th class="px-3 py-1 border">Aspect</th>
+          <th class="px-3 py-1 border">Current Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="px-3 py-1 border font-semibold">Authentication</td>
+          <td class="px-3 py-1 border">Firebase Auth (email/password, Google OIDC).</td>
+        </tr>
+        <tr>
+          <td class="px-3 py-1 border font-semibold">Authorization</td>
+          <td class="px-3 py-1 border">Firestore Security Rules V1 (least privilege).</td>
+        </tr>
+        <tr>
+          <td class="px-3 py-1 border font-semibold">Secrets Mgmt</td>
+          <td class="px-3 py-1 border">Vercel env vars &amp; Firebase config.</td>
+        </tr>
+        <tr>
+          <td class="px-3 py-1 border font-semibold">Data Protection</td>
+          <td class="px-3 py-1 border">TLS in transit; AES-256 at rest.</td>
+        </tr>
+        <tr>
+          <td class="px-3 py-1 border font-semibold">Compliance</td>
+          <td class="px-3 py-1 border">GDPR &amp; COPPA friendly.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <hr/>
+
+  <h2>9. Observability &amp; Monitoring</h2>
+  <div class="overflow-x-auto">
+    <table class="table-auto border border-gray-300">
+      <thead class="bg-gray-100">
+        <tr>
+          <th class="px-3 py-1 border">Layer</th>
+          <th class="px-3 py-1 border">Tooling</th>
+          <th class="px-3 py-1 border">Purpose</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="px-3 py-1 border">Frontend (Vercel)</td>
+          <td class="px-3 py-1 border">Vercel Analytics, Web Vitals</td>
+          <td class="px-3 py-1 border">Performance metrics.</td>
+        </tr>
+        <tr>
+          <td class="px-3 py-1 border">Client Errors</td>
+          <td class="px-3 py-1 border">Sentry (planned), Firebase Crashlytics</td>
+          <td class="px-3 py-1 border">Capture exceptions.</td>
+        </tr>
+        <tr>
+          <td class="px-3 py-1 border">Backend (Firebase)</td>
+          <td class="px-3 py-1 border">Firebase Performance Monitoring</td>
+          <td class="px-3 py-1 border">Firestore latency, Function runtime.</td>
+        </tr>
+        <tr>
+          <td class="px-3 py-1 border">Logging</td>
+          <td class="px-3 py-1 border">Vercel Log Drains → BigQuery</td>
+          <td class="px-3 py-1 border">Centralised logs.</td>
+        </tr>
+        <tr>
+          <td class="px-3 py-1 border">Alerting</td>
+          <td class="px-3 py-1 border">Slack + Vercel/Firebase alerts</td>
+          <td class="px-3 py-1 border">Build failures, quota &amp; error spikes.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <hr/>
+
+  
+  </main>
+  <footer class="text-center text-sm text-gray-500 py-8 mt-6">Last updated: July 16, 2025</footer>
+</body>
+</html>

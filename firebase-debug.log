@@ -1,0 +1,334 @@
+[debug] [2025-07-30T04:05:29.422Z] Checked if tokens are valid: true, expires at: 1753850329221
+[debug] [2025-07-30T04:05:29.423Z] Checked if tokens are valid: true, expires at: 1753850329221
+[debug] [2025-07-30T04:05:29.424Z] Checked if tokens are valid: true, expires at: 1753850329221
+[debug] [2025-07-30T04:05:29.424Z] Checked if tokens are valid: true, expires at: 1753850329221
+[debug] [2025-07-30T04:05:29.424Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com [none]
+[debug] [2025-07-30T04:05:29.424Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com x-goog-quota-user=projects/edueron-a0ce0
+[debug] [2025-07-30T04:05:29.443Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com [none]
+[debug] [2025-07-30T04:05:29.444Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/edueron-a0ce0
+[debug] [2025-07-30T04:05:30.065Z] Checked if tokens are valid: true, expires at: 1753850329221
+[debug] [2025-07-30T04:05:30.066Z] Checked if tokens are valid: true, expires at: 1753850329221
+[debug] [2025-07-30T04:05:30.067Z] Checked if tokens are valid: true, expires at: 1753850329221
+[debug] [2025-07-30T04:05:30.067Z] Checked if tokens are valid: true, expires at: 1753850329221
+[debug] [2025-07-30T04:05:30.067Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com [none]
+[debug] [2025-07-30T04:05:30.067Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com x-goog-quota-user=projects/edueron-a0ce0
+[debug] [2025-07-30T04:05:30.075Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com [none]
+[debug] [2025-07-30T04:05:30.075Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/edueron-a0ce0
+[debug] [2025-07-30T04:05:31.137Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com 200
+[debug] [2025-07-30T04:05:31.138Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com [omitted]
+[debug] [2025-07-30T04:05:31.138Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com 200
+[debug] [2025-07-30T04:05:31.138Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2025-07-30T04:05:31.197Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-30T04:05:31.197Z] > authorizing via signed-in user (eduerondata@gmail.com)
+[debug] [2025-07-30T04:05:31.208Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-30T04:05:31.208Z] > authorizing via signed-in user (eduerondata@gmail.com)
+[debug] [2025-07-30T04:05:31.863Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com 200
+[debug] [2025-07-30T04:05:31.863Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2025-07-30T04:05:31.863Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com 200
+[debug] [2025-07-30T04:05:31.863Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com [omitted]
+[debug] [2025-07-30T04:05:31.865Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-30T04:05:31.865Z] > authorizing via signed-in user (eduerondata@gmail.com)
+[debug] [2025-07-31T04:48:08.389Z] Checked if tokens are valid: false, expires at: 1753900793021
+[debug] [2025-07-31T04:48:08.391Z] Checked if tokens are valid: false, expires at: 1753900793021
+[debug] [2025-07-31T04:48:08.392Z] > refreshing access token with scopes: []
+[debug] [2025-07-31T04:48:08.393Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-07-31T04:48:08.393Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-07-31T04:48:08.437Z] Checked if tokens are valid: false, expires at: 1753900793021
+[debug] [2025-07-31T04:48:08.437Z] Checked if tokens are valid: false, expires at: 1753900793021
+[debug] [2025-07-31T04:48:08.438Z] > refreshing access token with scopes: []
+[debug] [2025-07-31T04:48:08.438Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-07-31T04:48:08.438Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-07-31T04:48:08.472Z] Checked if tokens are valid: false, expires at: 1753900793021
+[debug] [2025-07-31T04:48:08.472Z] Checked if tokens are valid: false, expires at: 1753900793021
+[debug] [2025-07-31T04:48:08.472Z] > refreshing access token with scopes: []
+[debug] [2025-07-31T04:48:08.472Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-07-31T04:48:08.472Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-07-31T04:48:08.473Z] Checked if tokens are valid: false, expires at: 1753900793021
+[debug] [2025-07-31T04:48:08.473Z] Checked if tokens are valid: false, expires at: 1753900793021
+[debug] [2025-07-31T04:48:08.473Z] > refreshing access token with scopes: []
+[debug] [2025-07-31T04:48:08.473Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-07-31T04:48:08.473Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-07-31T04:48:08.474Z] Checked if tokens are valid: false, expires at: 1753900793021
+[debug] [2025-07-31T04:48:08.474Z] Checked if tokens are valid: false, expires at: 1753900793021
+[debug] [2025-07-31T04:48:08.474Z] > refreshing access token with scopes: []
+[debug] [2025-07-31T04:48:08.474Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-07-31T04:48:08.474Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-07-31T04:48:08.476Z] Checked if tokens are valid: false, expires at: 1753900793021
+[debug] [2025-07-31T04:48:08.476Z] Checked if tokens are valid: false, expires at: 1753900793021
+[debug] [2025-07-31T04:48:08.476Z] > refreshing access token with scopes: []
+[debug] [2025-07-31T04:48:08.476Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-07-31T04:48:08.476Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-07-31T04:48:08.636Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-07-31T04:48:08.636Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-07-31T04:48:08.656Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com [none]
+[debug] [2025-07-31T04:48:08.656Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/edueron-a0ce0
+[debug] [2025-07-31T04:48:08.660Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-07-31T04:48:08.660Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-07-31T04:48:08.673Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com [none]
+[debug] [2025-07-31T04:48:08.673Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com x-goog-quota-user=projects/edueron-a0ce0
+[debug] [2025-07-31T04:48:08.684Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-07-31T04:48:08.684Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-07-31T04:48:08.692Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com [none]
+[debug] [2025-07-31T04:48:08.692Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/edueron-a0ce0
+[debug] [2025-07-31T04:48:08.697Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-07-31T04:48:08.697Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-07-31T04:48:08.704Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com [none]
+[debug] [2025-07-31T04:48:08.704Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/edueron-a0ce0
+[debug] [2025-07-31T04:48:08.705Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-07-31T04:48:08.705Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-07-31T04:48:08.718Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com [none]
+[debug] [2025-07-31T04:48:08.718Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com x-goog-quota-user=projects/edueron-a0ce0
+[debug] [2025-07-31T04:48:08.719Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-07-31T04:48:08.719Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-07-31T04:48:08.734Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com [none]
+[debug] [2025-07-31T04:48:08.734Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com x-goog-quota-user=projects/edueron-a0ce0
+[debug] [2025-07-31T04:48:10.460Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com 200
+[debug] [2025-07-31T04:48:10.460Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com [omitted]
+[debug] [2025-07-31T04:48:10.466Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com 200
+[debug] [2025-07-31T04:48:10.467Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com [omitted]
+[debug] [2025-07-31T04:48:10.467Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com 200
+[debug] [2025-07-31T04:48:10.467Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2025-07-31T04:48:10.468Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com 200
+[debug] [2025-07-31T04:48:10.468Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2025-07-31T04:48:10.480Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-31T04:48:10.480Z] > authorizing via signed-in user (eduerondata@gmail.com)
+[debug] [2025-07-31T04:48:10.481Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com 200
+[debug] [2025-07-31T04:48:10.481Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2025-07-31T04:48:10.490Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com 200
+[debug] [2025-07-31T04:48:10.491Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com [omitted]
+[debug] [2025-07-31T04:48:10.493Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-31T04:48:10.493Z] > authorizing via signed-in user (eduerondata@gmail.com)
+[debug] [2025-07-31T05:05:35.504Z] Checked if tokens are valid: true, expires at: 1753940887786
+[debug] [2025-07-31T05:05:35.505Z] Checked if tokens are valid: true, expires at: 1753940887786
+[debug] [2025-07-31T05:05:35.506Z] Checked if tokens are valid: true, expires at: 1753940887786
+[debug] [2025-07-31T05:05:35.506Z] Checked if tokens are valid: true, expires at: 1753940887786
+[debug] [2025-07-31T05:05:35.506Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com [none]
+[debug] [2025-07-31T05:05:35.506Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com x-goog-quota-user=projects/edueron-a0ce0
+[debug] [2025-07-31T05:05:35.532Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com [none]
+[debug] [2025-07-31T05:05:35.532Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/edueron-a0ce0
+[debug] [2025-07-31T05:05:35.930Z] Checked if tokens are valid: true, expires at: 1753940887786
+[debug] [2025-07-31T05:05:35.930Z] Checked if tokens are valid: true, expires at: 1753940887786
+[debug] [2025-07-31T05:05:35.931Z] Checked if tokens are valid: true, expires at: 1753940887786
+[debug] [2025-07-31T05:05:35.931Z] Checked if tokens are valid: true, expires at: 1753940887786
+[debug] [2025-07-31T05:05:35.931Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com [none]
+[debug] [2025-07-31T05:05:35.931Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com x-goog-quota-user=projects/edueron-a0ce0
+[debug] [2025-07-31T05:05:35.931Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com [none]
+[debug] [2025-07-31T05:05:35.931Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/edueron-a0ce0
+[debug] [2025-07-31T05:05:37.595Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com 200
+[debug] [2025-07-31T05:05:37.595Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com [omitted]
+[debug] [2025-07-31T05:05:37.595Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com 200
+[debug] [2025-07-31T05:05:37.595Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2025-07-31T05:05:37.609Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-31T05:05:37.609Z] > authorizing via signed-in user (eduerondata@gmail.com)
+[debug] [2025-07-31T05:05:37.622Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-31T05:05:37.622Z] > authorizing via signed-in user (eduerondata@gmail.com)
+[debug] [2025-07-31T05:05:38.547Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com 200
+[debug] [2025-07-31T05:05:38.547Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2025-07-31T05:05:38.548Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com 200
+[debug] [2025-07-31T05:05:38.548Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com [omitted]
+[debug] [2025-07-31T05:05:38.551Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-31T05:05:38.551Z] > authorizing via signed-in user (eduerondata@gmail.com)
+[debug] [2025-07-31T09:06:19.739Z] Checked if tokens are valid: true, expires at: 1753956377940
+[debug] [2025-07-31T09:06:19.740Z] Checked if tokens are valid: true, expires at: 1753956377940
+[debug] [2025-07-31T09:06:19.740Z] Checked if tokens are valid: true, expires at: 1753956377940
+[debug] [2025-07-31T09:06:19.740Z] Checked if tokens are valid: true, expires at: 1753956377940
+[debug] [2025-07-31T09:06:19.741Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com [none]
+[debug] [2025-07-31T09:06:19.741Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com x-goog-quota-user=projects/edueron-a0ce0
+[debug] [2025-07-31T09:06:19.760Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com [none]
+[debug] [2025-07-31T09:06:19.760Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/edueron-a0ce0
+[debug] [2025-07-31T09:06:21.511Z] Checked if tokens are valid: true, expires at: 1753956377940
+[debug] [2025-07-31T09:06:21.512Z] Checked if tokens are valid: true, expires at: 1753956377940
+[debug] [2025-07-31T09:06:21.512Z] Checked if tokens are valid: true, expires at: 1753956377940
+[debug] [2025-07-31T09:06:21.512Z] Checked if tokens are valid: true, expires at: 1753956377940
+[debug] [2025-07-31T09:06:21.512Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com [none]
+[debug] [2025-07-31T09:06:21.512Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com x-goog-quota-user=projects/edueron-a0ce0
+[debug] [2025-07-31T09:06:21.513Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com [none]
+[debug] [2025-07-31T09:06:21.513Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/edueron-a0ce0
+[debug] [2025-07-31T09:06:21.929Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com 200
+[debug] [2025-07-31T09:06:21.929Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2025-07-31T09:06:22.539Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com 200
+[debug] [2025-07-31T09:06:22.539Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com [omitted]
+[debug] [2025-07-31T09:06:22.587Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-31T09:06:22.587Z] > authorizing via signed-in user (eduerondata@gmail.com)
+[debug] [2025-07-31T09:06:22.793Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-31T09:06:22.793Z] > authorizing via signed-in user (eduerondata@gmail.com)
+[debug] [2025-07-31T09:06:23.315Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com 200
+[debug] [2025-07-31T09:06:23.315Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com [omitted]
+[debug] [2025-07-31T09:06:23.339Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com 200
+[debug] [2025-07-31T09:06:23.339Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2025-07-31T09:06:23.341Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-31T09:06:23.341Z] > authorizing via signed-in user (eduerondata@gmail.com)
+[debug] [2025-08-01T11:07:08.828Z] Checked if tokens are valid: true, expires at: 1754050017860
+[debug] [2025-08-01T11:07:08.830Z] Checked if tokens are valid: true, expires at: 1754050017860
+[debug] [2025-08-01T11:07:08.830Z] Checked if tokens are valid: true, expires at: 1754050017860
+[debug] [2025-08-01T11:07:08.830Z] Checked if tokens are valid: true, expires at: 1754050017860
+[debug] [2025-08-01T11:07:08.830Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com [none]
+[debug] [2025-08-01T11:07:08.830Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com x-goog-quota-user=projects/edueron-a0ce0
+[debug] [2025-08-01T11:07:08.850Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com [none]
+[debug] [2025-08-01T11:07:08.851Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/edueron-a0ce0
+[debug] [2025-08-01T11:07:08.876Z] Checked if tokens are valid: true, expires at: 1754050017860
+[debug] [2025-08-01T11:07:08.876Z] Checked if tokens are valid: true, expires at: 1754050017860
+[debug] [2025-08-01T11:07:08.876Z] Checked if tokens are valid: true, expires at: 1754050017860
+[debug] [2025-08-01T11:07:08.876Z] Checked if tokens are valid: true, expires at: 1754050017860
+[debug] [2025-08-01T11:07:08.877Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com [none]
+[debug] [2025-08-01T11:07:08.877Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com x-goog-quota-user=projects/edueron-a0ce0
+[debug] [2025-08-01T11:07:08.877Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com [none]
+[debug] [2025-08-01T11:07:08.877Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/edueron-a0ce0
+[debug] [2025-08-01T11:07:08.879Z] Checked if tokens are valid: true, expires at: 1754050017860
+[debug] [2025-08-01T11:07:08.879Z] Checked if tokens are valid: true, expires at: 1754050017860
+[debug] [2025-08-01T11:07:08.879Z] Checked if tokens are valid: true, expires at: 1754050017860
+[debug] [2025-08-01T11:07:08.879Z] Checked if tokens are valid: true, expires at: 1754050017860
+[debug] [2025-08-01T11:07:08.879Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com [none]
+[debug] [2025-08-01T11:07:08.879Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com x-goog-quota-user=projects/edueron-a0ce0
+[debug] [2025-08-01T11:07:08.880Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com [none]
+[debug] [2025-08-01T11:07:08.880Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/edueron-a0ce0
+[debug] [2025-08-01T11:07:10.667Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com 200
+[debug] [2025-08-01T11:07:10.667Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2025-08-01T11:07:10.717Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com 200
+[debug] [2025-08-01T11:07:10.717Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com [omitted]
+[debug] [2025-08-01T11:07:10.719Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com 200
+[debug] [2025-08-01T11:07:10.720Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com [omitted]
+[debug] [2025-08-01T11:07:10.722Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com 200
+[debug] [2025-08-01T11:07:10.722Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2025-08-01T11:07:10.727Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-08-01T11:07:10.729Z] > authorizing via signed-in user (eduerondata@gmail.com)
+[debug] [2025-08-01T11:07:10.736Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com 200
+[debug] [2025-08-01T11:07:10.737Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com [omitted]
+[debug] [2025-08-01T11:07:10.740Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com 200
+[debug] [2025-08-01T11:07:10.740Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2025-08-01T11:07:10.744Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-08-01T11:07:10.744Z] > authorizing via signed-in user (eduerondata@gmail.com)
+[debug] [2025-08-01T11:09:14.560Z] Checked if tokens are valid: true, expires at: 1754050017860
+[debug] [2025-08-01T11:09:14.567Z] Checked if tokens are valid: true, expires at: 1754050017860
+[debug] [2025-08-01T11:09:14.567Z] Checked if tokens are valid: true, expires at: 1754050017860
+[debug] [2025-08-01T11:09:14.568Z] Checked if tokens are valid: true, expires at: 1754050017860
+[debug] [2025-08-01T11:09:14.569Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com [none]
+[debug] [2025-08-01T11:09:14.570Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com x-goog-quota-user=projects/edueron-a0ce0
+[debug] [2025-08-01T11:09:14.632Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com [none]
+[debug] [2025-08-01T11:09:14.633Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/edueron-a0ce0
+[debug] [2025-08-01T11:09:15.220Z] Checked if tokens are valid: true, expires at: 1754050017860
+[debug] [2025-08-01T11:09:15.220Z] Checked if tokens are valid: true, expires at: 1754050017860
+[debug] [2025-08-01T11:09:15.220Z] Checked if tokens are valid: true, expires at: 1754050017860
+[debug] [2025-08-01T11:09:15.220Z] Checked if tokens are valid: true, expires at: 1754050017860
+[debug] [2025-08-01T11:09:15.220Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com [none]
+[debug] [2025-08-01T11:09:15.221Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com x-goog-quota-user=projects/edueron-a0ce0
+[debug] [2025-08-01T11:09:15.221Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com [none]
+[debug] [2025-08-01T11:09:15.221Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/edueron-a0ce0
+[debug] [2025-08-01T11:09:16.415Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com 200
+[debug] [2025-08-01T11:09:16.415Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2025-08-01T11:09:16.490Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com 200
+[debug] [2025-08-01T11:09:16.491Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com [omitted]
+[debug] [2025-08-01T11:09:16.498Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-08-01T11:09:16.498Z] > authorizing via signed-in user (eduerondata@gmail.com)
+[debug] [2025-08-01T11:09:16.509Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-08-01T11:09:16.509Z] > authorizing via signed-in user (eduerondata@gmail.com)
+[debug] [2025-08-01T11:09:17.143Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com 200
+[debug] [2025-08-01T11:09:17.143Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com [omitted]
+[debug] [2025-08-01T11:09:17.146Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com 200
+[debug] [2025-08-01T11:09:17.146Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2025-08-01T11:09:17.149Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-08-01T11:09:17.149Z] > authorizing via signed-in user (eduerondata@gmail.com)
+[debug] [2025-08-02T05:01:15.676Z] Checked if tokens are valid: true, expires at: 1754112900903
+[debug] [2025-08-02T05:01:15.678Z] Checked if tokens are valid: true, expires at: 1754112900903
+[debug] [2025-08-02T05:01:15.678Z] Checked if tokens are valid: true, expires at: 1754112900903
+[debug] [2025-08-02T05:01:15.678Z] Checked if tokens are valid: true, expires at: 1754112900903
+[debug] [2025-08-02T05:01:15.678Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com [none]
+[debug] [2025-08-02T05:01:15.679Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com x-goog-quota-user=projects/edueron-a0ce0
+[debug] [2025-08-02T05:01:15.699Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com [none]
+[debug] [2025-08-02T05:01:15.700Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/edueron-a0ce0
+[debug] [2025-08-02T05:01:15.890Z] Checked if tokens are valid: true, expires at: 1754112900903
+[debug] [2025-08-02T05:01:15.890Z] Checked if tokens are valid: true, expires at: 1754112900903
+[debug] [2025-08-02T05:01:15.890Z] Checked if tokens are valid: true, expires at: 1754112900903
+[debug] [2025-08-02T05:01:15.890Z] Checked if tokens are valid: true, expires at: 1754112900903
+[debug] [2025-08-02T05:01:15.890Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com [none]
+[debug] [2025-08-02T05:01:15.890Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com x-goog-quota-user=projects/edueron-a0ce0
+[debug] [2025-08-02T05:01:15.891Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com [none]
+[debug] [2025-08-02T05:01:15.891Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/edueron-a0ce0
+[debug] [2025-08-02T05:01:17.310Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com 200
+[debug] [2025-08-02T05:01:17.310Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2025-08-02T05:01:17.334Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com 200
+[debug] [2025-08-02T05:01:17.334Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com [omitted]
+[debug] [2025-08-02T05:01:17.341Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-08-02T05:01:17.341Z] > authorizing via signed-in user (eduerondata@gmail.com)
+[debug] [2025-08-02T05:01:17.348Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-08-02T05:01:17.349Z] > authorizing via signed-in user (eduerondata@gmail.com)
+[debug] [2025-08-02T05:01:17.540Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com 200
+[debug] [2025-08-02T05:01:17.540Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com [omitted]
+[debug] [2025-08-02T05:01:17.541Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com 200
+[debug] [2025-08-02T05:01:17.541Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2025-08-02T05:01:17.543Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-08-02T05:01:17.543Z] > authorizing via signed-in user (eduerondata@gmail.com)
+[debug] [2025-08-02T06:17:07.725Z] Checked if tokens are valid: true, expires at: 1754119025787
+[debug] [2025-08-02T06:17:07.727Z] Checked if tokens are valid: true, expires at: 1754119025787
+[debug] [2025-08-02T06:17:07.727Z] Checked if tokens are valid: true, expires at: 1754119025787
+[debug] [2025-08-02T06:17:07.727Z] Checked if tokens are valid: true, expires at: 1754119025787
+[debug] [2025-08-02T06:17:07.728Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com [none]
+[debug] [2025-08-02T06:17:07.728Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com x-goog-quota-user=projects/edueron-a0ce0
+[debug] [2025-08-02T06:17:07.746Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com [none]
+[debug] [2025-08-02T06:17:07.746Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/edueron-a0ce0
+[debug] [2025-08-02T06:17:08.708Z] Checked if tokens are valid: true, expires at: 1754119025787
+[debug] [2025-08-02T06:17:08.709Z] Checked if tokens are valid: true, expires at: 1754119025787
+[debug] [2025-08-02T06:17:08.709Z] Checked if tokens are valid: true, expires at: 1754119025787
+[debug] [2025-08-02T06:17:08.709Z] Checked if tokens are valid: true, expires at: 1754119025787
+[debug] [2025-08-02T06:17:08.709Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com [none]
+[debug] [2025-08-02T06:17:08.709Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com x-goog-quota-user=projects/edueron-a0ce0
+[debug] [2025-08-02T06:17:08.710Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com [none]
+[debug] [2025-08-02T06:17:08.710Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/edueron-a0ce0
+[debug] [2025-08-02T06:17:09.373Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com 200
+[debug] [2025-08-02T06:17:09.373Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com [omitted]
+[debug] [2025-08-02T06:17:09.433Z] Checked if tokens are valid: true, expires at: 1754119025787
+[debug] [2025-08-02T06:17:09.434Z] Checked if tokens are valid: true, expires at: 1754119025787
+[debug] [2025-08-02T06:17:09.434Z] Checked if tokens are valid: true, expires at: 1754119025787
+[debug] [2025-08-02T06:17:09.434Z] Checked if tokens are valid: true, expires at: 1754119025787
+[debug] [2025-08-02T06:17:09.434Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com [none]
+[debug] [2025-08-02T06:17:09.434Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com x-goog-quota-user=projects/edueron-a0ce0
+[debug] [2025-08-02T06:17:09.436Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com [none]
+[debug] [2025-08-02T06:17:09.436Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/edueron-a0ce0
+[debug] [2025-08-02T06:17:09.478Z] Checked if tokens are valid: true, expires at: 1754119025787
+[debug] [2025-08-02T06:17:09.478Z] Checked if tokens are valid: true, expires at: 1754119025787
+[debug] [2025-08-02T06:17:09.478Z] Checked if tokens are valid: true, expires at: 1754119025787
+[debug] [2025-08-02T06:17:09.478Z] Checked if tokens are valid: true, expires at: 1754119025787
+[debug] [2025-08-02T06:17:09.478Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com [none]
+[debug] [2025-08-02T06:17:09.478Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com x-goog-quota-user=projects/edueron-a0ce0
+[debug] [2025-08-02T06:17:09.479Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com [none]
+[debug] [2025-08-02T06:17:09.479Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/edueron-a0ce0
+[debug] [2025-08-02T06:17:09.833Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com 200
+[debug] [2025-08-02T06:17:09.833Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com [omitted]
+[debug] [2025-08-02T06:17:09.999Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com 200
+[debug] [2025-08-02T06:17:09.999Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2025-08-02T06:17:10.508Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com 200
+[debug] [2025-08-02T06:17:10.508Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com [omitted]
+[debug] [2025-08-02T06:17:10.509Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com 200
+[debug] [2025-08-02T06:17:10.509Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2025-08-02T06:17:10.511Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-08-02T06:17:10.511Z] > authorizing via signed-in user (eduerondata@gmail.com)
+[debug] [2025-08-02T06:17:10.762Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-08-02T06:17:10.762Z] > authorizing via signed-in user (eduerondata@gmail.com)
+[debug] [2025-08-02T06:17:11.083Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com 200
+[debug] [2025-08-02T06:17:11.083Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2025-08-02T06:17:11.085Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-08-02T06:17:11.086Z] > authorizing via signed-in user (eduerondata@gmail.com)
+[debug] [2025-08-02T06:17:11.142Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com 200
+[debug] [2025-08-02T06:17:11.142Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com [omitted]
+[debug] [2025-08-02T06:17:11.148Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com 200
+[debug] [2025-08-02T06:17:11.148Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2025-08-02T06:17:11.151Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-08-02T06:17:11.151Z] > authorizing via signed-in user (eduerondata@gmail.com)
+[debug] [2025-08-02T16:37:54.689Z] Checked if tokens are valid: true, expires at: 1754156273204
+[debug] [2025-08-02T16:37:54.691Z] Checked if tokens are valid: true, expires at: 1754156273204
+[debug] [2025-08-02T16:37:54.691Z] Checked if tokens are valid: true, expires at: 1754156273204
+[debug] [2025-08-02T16:37:54.691Z] Checked if tokens are valid: true, expires at: 1754156273204
+[debug] [2025-08-02T16:37:54.692Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com [none]
+[debug] [2025-08-02T16:37:54.692Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com x-goog-quota-user=projects/edueron-a0ce0
+[debug] [2025-08-02T16:37:54.712Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com [none]
+[debug] [2025-08-02T16:37:54.712Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/edueron-a0ce0
+[debug] [2025-08-02T16:37:56.493Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com 200
+[debug] [2025-08-02T16:37:56.493Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2025-08-02T16:37:56.525Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com 200
+[debug] [2025-08-02T16:37:56.526Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/edueron-a0ce0/services/firebasecrashlytics.googleapis.com [omitted]
+[debug] [2025-08-02T16:37:56.589Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-08-02T16:37:56.590Z] > authorizing via signed-in user (eduerondata@gmail.com)
+[debug] [2025-08-02T16:37:57.318Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-08-02T16:37:57.318Z] > authorizing via signed-in user (eduerondata@gmail.com)
+[debug] [2025-08-02T16:37:57.328Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-08-02T16:37:57.328Z] > authorizing via signed-in user (eduerondata@gmail.com)

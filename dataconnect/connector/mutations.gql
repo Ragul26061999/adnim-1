@@ -1,0 +1,276 @@
+# School Management System Mutations
+
+# Upsert user profile
+mutation UpsertUser($email: String!, $displayName: String, $role: String)
+@auth(level: USER) {
+  user_upsert(
+    data: {
+      id_expr: "auth.uid"
+      email: $email
+      displayName: $displayName
+      role: $role
+    }
+  )
+}
+
+# Create a new school
+mutation CreateSchool(
+  $name: String!
+  $address: String
+  $contact: String
+  $isBranch: Boolean
+  $mainBranchId: UUID
+) @auth(level: USER) {
+  school_insert(
+    data: {
+      name: $name
+      address: $address
+      contact: $contact
+      mainAdminId_expr: "auth.uid"
+      isBranch: $isBranch
+      mainBranchId: $mainBranchId
+    }
+  )
+}
+
+# Update a school
+mutation UpdateSchool(
+  $schoolId: UUID!
+  $name: String
+  $address: String
+  $contact: String
+) @auth(level: USER) {
+  school_update(
+    id: $schoolId
+    data: { name: $name, address: $address, contact: $contact }
+  )
+}
+
+# Create a new class
+mutation CreateClass($name: String!, $schoolId: UUID!) @auth(level: USER) {
+  class_insert(
+    data: { name: $name, schoolId: $schoolId, createdById_expr: "auth.uid" }
+  )
+}
+
+# Update a class
+mutation UpdateClass($classId: UUID!, $name: String!) @auth(level: USER) {
+  class_update(id: $classId, data: { name: $name })
+}
+
+# Delete a class
+mutation DeleteClass($classId: UUID!) @auth(level: USER) {
+  class_delete(id: $classId)
+}
+
+# Create a new subject
+mutation CreateSubject(
+  $name: String!
+  $description: String
+  $image: String
+  $schoolId: UUID!
+) @auth(level: USER) {
+  subject_insert(
+    data: {
+      name: $name
+      description: $description
+      image: $image
+      schoolId: $schoolId
+      createdById_expr: "auth.uid"
+    }
+  )
+}
+
+# Update a subject
+mutation UpdateSubject(
+  $subjectId: UUID!
+  $name: String
+  $description: String
+  $image: String
+) @auth(level: USER) {
+  subject_update(
+    id: $subjectId
+    data: { name: $name, description: $description, image: $image }
+  )
+}
+
+# Delete a subject
+mutation DeleteSubject($subjectId: UUID!) @auth(level: USER) {
+  subject_delete(id: $subjectId)
+}
+
+# Create a new chapter
+mutation CreateChapter(
+  $name: String!
+  $description: String
+  $subjectId: UUID!
+  $schoolId: UUID!
+  $orderIndex: Int
+) @auth(level: USER) {
+  chapter_insert(
+    data: {
+      name: $name
+      description: $description
+      subjectId: $subjectId
+      schoolId: $schoolId
+      orderIndex: $orderIndex
+      createdById_expr: "auth.uid"
+    }
+  )
+}
+
+# Update a chapter
+mutation UpdateChapter(
+  $chapterId: UUID!
+  $name: String
+  $description: String
+  $orderIndex: Int
+) @auth(level: USER) {
+  chapter_update(
+    id: $chapterId
+    data: { name: $name, description: $description, orderIndex: $orderIndex }
+  )
+}
+
+# Delete a chapter
+mutation DeleteChapter($chapterId: UUID!) @auth(level: USER) {
+  chapter_delete(id: $chapterId)
+}
+
+# Create a new lesson
+mutation CreateLesson(
+  $name: String!
+  $description: String
+  $content: String
+  $chapterId: UUID!
+  $subjectId: UUID!
+  $schoolId: UUID!
+  $orderIndex: Int
+) @auth(level: USER) {
+  lesson_insert(
+    data: {
+      name: $name
+      description: $description
+      content: $content
+      chapterId: $chapterId
+      subjectId: $subjectId
+      schoolId: $schoolId
+      orderIndex: $orderIndex
+      createdById_expr: "auth.uid"
+    }
+  )
+}
+
+# Update a lesson
+mutation UpdateLesson(
+  $lessonId: UUID!
+  $name: String
+  $description: String
+  $content: String
+  $orderIndex: Int
+) @auth(level: USER) {
+  lesson_update(
+    id: $lessonId
+    data: {
+      name: $name
+      description: $description
+      content: $content
+      orderIndex: $orderIndex
+    }
+  )
+}
+
+# Delete a lesson
+mutation DeleteLesson($lessonId: UUID!) @auth(level: USER) {
+  lesson_delete(id: $lessonId)
+}
+
+# Create a new teacher
+mutation CreateTeacher($teacherId: String!, $userId: String!, $schoolId: UUID!)
+@auth(level: USER) {
+  teacher_insert(
+    data: {
+      teacherId: $teacherId
+      userId: $userId
+      schoolId: $schoolId
+      createdById_expr: "auth.uid"
+    }
+  )
+}
+
+# Update a teacher
+mutation UpdateTeacher($teacherId: UUID!, $teacherIdString: String!)
+@auth(level: USER) {
+  teacher_update(id: $teacherId, data: { teacherId: $teacherIdString })
+}
+
+# Delete a teacher
+mutation DeleteTeacher($teacherId: UUID!) @auth(level: USER) {
+  teacher_delete(id: $teacherId)
+}
+
+# Assign subject to class
+mutation AssignSubjectToClass(
+  $classId: UUID!
+  $subjectId: UUID!
+  $schoolId: UUID!
+) @auth(level: USER) {
+  classSubject_upsert(
+    data: {
+      classId: $classId
+      subjectId: $subjectId
+      schoolId: $schoolId
+      createdById_expr: "auth.uid"
+    }
+  )
+}
+
+# Remove subject from class
+mutation RemoveSubjectFromClass($classId: UUID!, $subjectId: UUID!)
+@auth(level: USER) {
+  classSubject_delete(key: { classId: $classId, subjectId: $subjectId })
+}
+
+# Assign teacher to class
+mutation AssignTeacherToClass(
+  $teacherId: UUID!
+  $classId: UUID!
+  $schoolId: UUID!
+) @auth(level: USER) {
+  teacherClass_upsert(
+    data: {
+      teacherId: $teacherId
+      classId: $classId
+      schoolId: $schoolId
+      createdById_expr: "auth.uid"
+    }
+  )
+}
+
+# Remove teacher from class
+mutation RemoveTeacherFromClass($teacherId: UUID!, $classId: UUID!)
+@auth(level: USER) {
+  teacherClass_delete(key: { teacherId: $teacherId, classId: $classId })
+}
+
+# Assign teacher to subject
+mutation AssignTeacherToSubject(
+  $teacherId: UUID!
+  $subjectId: UUID!
+  $schoolId: UUID!
+) @auth(level: USER) {
+  teacherSubject_upsert(
+    data: {
+      teacherId: $teacherId
+      subjectId: $subjectId
+      schoolId: $schoolId
+      createdById_expr: "auth.uid"
+    }
+  )
+}
+
+# Remove teacher from subject
+mutation RemoveTeacherFromSubject($teacherId: UUID!, $subjectId: UUID!)
+@auth(level: USER) {
+  teacherSubject_delete(key: { teacherId: $teacherId, subjectId: $subjectId })
+}

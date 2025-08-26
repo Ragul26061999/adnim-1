@@ -1,0 +1,246 @@
+# School Management System Queries
+
+# Get current user profile
+query GetCurrentUser @auth(level: USER) {
+  user(key: { id_expr: "auth.uid" }) {
+    id
+    email
+    displayName
+    role
+    createdAt
+    updatedAt
+  }
+}
+
+# Get school by ID
+query GetSchoolById($schoolId: UUID!) @auth(level: USER) {
+  school(id: $schoolId) {
+    id
+    name
+    address
+    contact
+    isBranch
+    mainAdmin {
+      id
+      email
+      displayName
+    }
+    branchAdmin {
+      id
+      email
+      displayName
+    }
+    mainBranch {
+      id
+      name
+    }
+    createdAt
+    updatedAt
+  }
+}
+
+# List all classes for a school
+query ListClassesBySchool($schoolId: UUID!) @auth(level: USER) {
+  classes(
+    where: { school: { id: { eq: $schoolId } } }
+    orderBy: { name: ASC }
+  ) {
+    id
+    name
+    school {
+      id
+      name
+    }
+    createdBy {
+      id
+      displayName
+    }
+    createdAt
+    updatedAt
+  }
+}
+
+# List all subjects for a school
+query ListSubjectsBySchool($schoolId: UUID!) @auth(level: USER) {
+  subjects(
+    where: { school: { id: { eq: $schoolId } } }
+    orderBy: { name: ASC }
+  ) {
+    id
+    name
+    description
+    image
+    school {
+      id
+      name
+    }
+    createdBy {
+      id
+      displayName
+    }
+    createdAt
+    updatedAt
+  }
+}
+
+# List all chapters for a subject
+query ListChaptersBySubject($subjectId: UUID!) @auth(level: USER) {
+  chapters(
+    where: { subject: { id: { eq: $subjectId } } }
+    orderBy: { orderIndex: ASC }
+  ) {
+    id
+    name
+    description
+    orderIndex
+    subject {
+      id
+      name
+    }
+    school {
+      id
+      name
+    }
+    createdBy {
+      id
+      displayName
+    }
+    createdAt
+    updatedAt
+  }
+}
+
+# List all lessons for a chapter
+query ListLessonsByChapter($chapterId: UUID!) @auth(level: USER) {
+  lessons(
+    where: { chapter: { id: { eq: $chapterId } } }
+    orderBy: { orderIndex: ASC }
+  ) {
+    id
+    name
+    description
+    content
+    orderIndex
+    chapter {
+      id
+      name
+    }
+    subject {
+      id
+      name
+    }
+    school {
+      id
+      name
+    }
+    createdBy {
+      id
+      displayName
+    }
+    createdAt
+    updatedAt
+  }
+}
+
+# List all teachers for a school
+query ListTeachersBySchool($schoolId: UUID!) @auth(level: USER) {
+  teachers(
+    where: { school: { id: { eq: $schoolId } } }
+    orderBy: { teacherId: ASC }
+  ) {
+    id
+    teacherId
+    user {
+      id
+      email
+      displayName
+    }
+    school {
+      id
+      name
+    }
+    createdBy {
+      id
+      displayName
+    }
+    createdAt
+    updatedAt
+  }
+}
+
+# Get class-subject assignments for a school
+query ListClassSubjectsBySchool($schoolId: UUID!) @auth(level: USER) {
+  classSubjects(where: { school: { id: { eq: $schoolId } } }) {
+    class {
+      id
+      name
+    }
+    subject {
+      id
+      name
+    }
+    school {
+      id
+      name
+    }
+    createdBy {
+      id
+      displayName
+    }
+    createdAt
+  }
+}
+
+# Get teacher-class assignments for a school
+query ListTeacherClassesBySchool($schoolId: UUID!) @auth(level: USER) {
+  teacherClasses(where: { school: { id: { eq: $schoolId } } }) {
+    teacher {
+      id
+      teacherId
+      user {
+        id
+        displayName
+      }
+    }
+    class {
+      id
+      name
+    }
+    school {
+      id
+      name
+    }
+    createdBy {
+      id
+      displayName
+    }
+    createdAt
+  }
+}
+
+# Get teacher-subject assignments for a school
+query ListTeacherSubjectsBySchool($schoolId: UUID!) @auth(level: USER) {
+  teacherSubjects(where: { school: { id: { eq: $schoolId } } }) {
+    teacher {
+      id
+      teacherId
+      user {
+        id
+        displayName
+      }
+    }
+    subject {
+      id
+      name
+    }
+    school {
+      id
+      name
+    }
+    createdBy {
+      id
+      displayName
+    }
+    createdAt
+  }
+}

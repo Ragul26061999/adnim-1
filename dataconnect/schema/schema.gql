@@ -1,0 +1,114 @@
+# School Management System Schema
+
+# User table is keyed by Firebase Auth UID.
+type User @table {
+  # `@default(expr: "auth.uid")` sets it to Firebase Auth UID during insert and upsert.
+  id: String! @default(expr: "auth.uid")
+  email: String! @col(dataType: "varchar(255)")
+  displayName: String @col(dataType: "varchar(100)")
+  role: String @col(dataType: "varchar(50)")
+  createdAt: Timestamp! @default(expr: "request.time")
+  updatedAt: Timestamp! @default(expr: "request.time")
+}
+
+# School table
+type School @table {
+  id: UUID! @default(expr: "uuidV4()")
+  name: String! @col(dataType: "varchar(255)")
+  address: String @col(dataType: "text")
+  contact: String @col(dataType: "varchar(20)")
+  mainAdmin: User!
+  isBranch: Boolean @default(expr: "false")
+  branchAdmin: User
+  mainBranch: School
+  createdAt: Timestamp! @default(expr: "request.time")
+  updatedAt: Timestamp! @default(expr: "request.time")
+}
+
+# Class table
+type Class @table {
+  id: UUID! @default(expr: "uuidV4()")
+  name: String! @col(dataType: "varchar(100)")
+  school: School!
+  createdBy: User!
+  createdAt: Timestamp! @default(expr: "request.time")
+  updatedAt: Timestamp! @default(expr: "request.time")
+}
+
+# Subject table
+type Subject @table {
+  id: UUID! @default(expr: "uuidV4()")
+  name: String! @col(dataType: "varchar(255)")
+  description: String @col(dataType: "text")
+  school: School!
+  image: String @col(dataType: "varchar(500)")
+  createdBy: User!
+  createdAt: Timestamp! @default(expr: "request.time")
+  updatedAt: Timestamp! @default(expr: "request.time")
+}
+
+# Chapter table
+type Chapter @table {
+  id: UUID! @default(expr: "uuidV4()")
+  name: String! @col(dataType: "varchar(255)")
+  description: String @col(dataType: "text")
+  subject: Subject!
+  school: School!
+  orderIndex: Int @default(expr: "0")
+  createdBy: User!
+  createdAt: Timestamp! @default(expr: "request.time")
+  updatedAt: Timestamp! @default(expr: "request.time")
+}
+
+# Lesson table
+type Lesson @table {
+  id: UUID! @default(expr: "uuidV4()")
+  name: String! @col(dataType: "varchar(255)")
+  description: String @col(dataType: "text")
+  content: String @col(dataType: "text")
+  chapter: Chapter!
+  subject: Subject!
+  school: School!
+  orderIndex: Int @default(expr: "0")
+  createdBy: User!
+  createdAt: Timestamp! @default(expr: "request.time")
+  updatedAt: Timestamp! @default(expr: "request.time")
+}
+
+# Teacher table
+type Teacher @table {
+  id: UUID! @default(expr: "uuidV4()")
+  teacherId: String! @col(dataType: "varchar(50)")
+  user: User!
+  school: School!
+  createdBy: User!
+  createdAt: Timestamp! @default(expr: "request.time")
+  updatedAt: Timestamp! @default(expr: "request.time")
+}
+
+# Class-Subject assignment table (many-to-many)
+type ClassSubject @table(key: ["class", "subject"]) {
+  class: Class!
+  subject: Subject!
+  school: School!
+  createdBy: User!
+  createdAt: Timestamp! @default(expr: "request.time")
+}
+
+# Teacher-Class assignment table (many-to-many)
+type TeacherClass @table(key: ["teacher", "class"]) {
+  teacher: Teacher!
+  class: Class!
+  school: School!
+  createdBy: User!
+  createdAt: Timestamp! @default(expr: "request.time")
+}
+
+# Teacher-Subject assignment table (many-to-many)
+type TeacherSubject @table(key: ["teacher", "subject"]) {
+  teacher: Teacher!
+  subject: Subject!
+  school: School!
+  createdBy: User!
+  createdAt: Timestamp! @default(expr: "request.time")
+}
